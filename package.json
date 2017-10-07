@@ -1,7 +1,7 @@
 {
-  "name": "dlcs/elucidate-cli",
-  "version": "1.0.0",
-  "description": "Describe elucidate-cli here",
+  "name": "elucidate-cli",
+  "version": "0.1.0",
+  "description": "Elucidate cli client (WIP)",
   "main": "lib/index.js",
   "module": "es/index.js",
   "bin": {
