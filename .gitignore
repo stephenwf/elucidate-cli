@@ -4,4 +4,5 @@
 /lib
 /node_modules
 /umd
+/.idea
 npm-debug.log*

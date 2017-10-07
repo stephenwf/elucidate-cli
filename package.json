@@ -1,22 +1,32 @@
 {
-  "name": "elucidate-cli",
+  "name": "dlcs/elucidate-cli",
   "version": "1.0.0",
   "description": "Describe elucidate-cli here",
   "main": "lib/index.js",
   "module": "es/index.js",
+  "bin": {
+    "elucidate": "./lib/cli.js"
+  },
   "files": [
     "es",
     "lib",
     "umd"
   ],
   "scripts": {
-    "build": "nwb build-web-module",
+    "build": "nwb build-web-module && chmod 755 ./lib/cli.js",
     "clean": "nwb clean-module",
     "test": "nwb test",
     "test:coverage": "nwb test --coverage",
-    "test:watch": "nwb test --server"
+    "test:watch": "nwb test --server",
+    "prepublish": "npm install"
   },
   "dependencies": {
+    "commander": "^2.11.0",
+    "fetch-headers": "^2.0.0",
+    "inquirer": "^3.3.0",
+    "node-fetch": "^1.7.3",
+    "prettyjson": "^1.2.1",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "nwb": "0.18.x"
